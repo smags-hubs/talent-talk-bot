@@ -1,0 +1,37 @@
+limits:
+max_items: 5
+
+
+slack:
+enabled: true
+webhook_env: "SLACK_WEBHOOK_URL"
+
+
+sources:
+brainfood:
+type: rss
+urls:
+- "https://recruitingbrainfood.substack.com/feed"
+
+
+pragmatic_engineer:
+type: rss
+urls:
+- "https://newsletter.pragmaticengineer.com/feed"
+
+
+levels_fyi:
+type: rss_or_scrape
+urls:
+- "https://www.levels.fyi/blog/"
+
+
+layoffs_fyi:
+type: scrape
+urls:
+- "https://layoffs.fyi/"
+
+
+linkedin_curated:
+type: sheet
+google_sheet_url: "" # Optional publish-to-web CSV link
